@@ -10,9 +10,13 @@ class Calculator extends StatefulWidget {
 class _CalculatorState extends State<Calculator> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(backgroundColor: Colors.blue[100]),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Calculator', style: TextStyle(color: Colors.white)),
+        centerTitle: true,
+        backgroundColor: Colors.blueAccent,
+      ),
+      backgroundColor: Colors.blue[100],
     );
   }
 }
