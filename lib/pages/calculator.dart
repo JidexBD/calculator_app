@@ -53,9 +53,13 @@ class _CalculatorState extends State<Calculator> {
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
                   ),
-                  itemCount: 2,
+                  itemCount: buttons.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return MyButton(buttonText: buttonText);
+                    return MyButton(
+                      buttonText: buttons[index],
+                      color: Colors.blueAccent,
+                      textColor: Colors.white,
+                    );
                   },
                 ),
               ),
