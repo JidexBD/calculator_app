@@ -3,27 +3,33 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   const MyButton({
     super.key,
-    this.color,
-    this.textColor,
+    required this.color,
+    required this.textColor,
     required this.buttonText,
+    required this.buttonTapped,
   });
 
   final color;
   final textColor;
   final buttonText;
 
+  final buttonTapped;
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ClipRRect(
-        borderRadius: BorderRadiusGeometry.circular(20),
-        child: Container(
-          color: color,
-          child: Center(
-            child: Text(
-              buttonText,
-              style: TextStyle(color: textColor, fontSize: 16),
+    return GestureDetector(
+      onTap: buttonTapped,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ClipRRect(
+          borderRadius: BorderRadiusGeometry.circular(20),
+          child: Container(
+            color: color,
+            child: Center(
+              child: Text(
+                buttonText,
+                style: TextStyle(color: textColor, fontSize: 16),
+              ),
             ),
           ),
         ),
