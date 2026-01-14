@@ -41,6 +41,7 @@ class _CalculatorState extends State<Calculator> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.white),
           title: Text('Calculator', style: TextStyle(color: Colors.white)),
           centerTitle: true,
           backgroundColor: Colors.blueAccent,

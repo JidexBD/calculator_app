@@ -14,6 +14,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          iconTheme: IconThemeData(color: Colors.white),
           title: Text(
             'Currency Converter',
             style: TextStyle(color: Colors.white),
