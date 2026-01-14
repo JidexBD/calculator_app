@@ -23,7 +23,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
           backgroundColor: Colors.blueAccent,
         ),
         backgroundColor: Colors.blue[100],
-        drawer: DrawerWidget(),
+
         body: Container(),
       ),
     );

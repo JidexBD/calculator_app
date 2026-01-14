@@ -15,7 +15,7 @@ class SettingsPage extends StatelessWidget {
           centerTitle: true,
         ),
         backgroundColor: Colors.blue[100],
-        drawer: DrawerWidget(),
+
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(10.0),
